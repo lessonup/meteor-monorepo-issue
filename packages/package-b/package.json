@@ -1,0 +1,12 @@
+{
+  "name": "@lessonup/package-b",
+  "version": "0.0.1",
+  "private": true,
+  "main": "dist/index.js",
+  "dependencies": {
+    "react": "^18.1.0"
+  },
+  "devDependencies": {
+    "typescript": "4.6.4"
+  }
+}
