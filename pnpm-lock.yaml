@@ -2,10 +2,14 @@ lockfileVersion: 5.3
 
 importers:
 
+  .:
+    specifiers: {}
+
   apps/myapp:
     specifiers:
       '@babel/runtime': ^7.18.0
       '@lessonup/package-a': 0.0.1
+      '@snowplow/browser-tracker': ^3.4.0
       '@types/meteor': ^1.4.81
       '@types/mocha': ^8.2.3
       '@types/react': ^17.0.30
@@ -17,6 +21,7 @@ importers:
     dependencies:
       '@babel/runtime': 7.18.0
       '@lessonup/package-a': link:../../packages/package-a
+      '@snowplow/browser-tracker': 3.4.0
       react: 18.1.0
       react-dom: 18.1.0_react@18.1.0
       scheduler: 0.22.0
@@ -54,6 +59,30 @@ packages:
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
+    dev: false
+
+  /@snowplow/browser-tracker-core/3.4.0:
+    resolution: {integrity: sha512-Eav/+UnfnytnuGVJRh8wjIdAN2Qx/IZxAtDtNj0cu+WQactAnSJBeUuaWOrcasXbvrMchlF+GyvA/PiOXLeDTQ==}
+    dependencies:
+      '@snowplow/tracker-core': 3.4.0
+      sha1: 1.1.1
+      tslib: 2.4.0
+      uuid: 3.4.0
+    dev: false
+
+  /@snowplow/browser-tracker/3.4.0:
+    resolution: {integrity: sha512-kOzTFAc4cwr/CJLA+lpwR0eDc0vmcIIjlX6veoRXiELb7tR1JFdCjaQirSmQ1mLjjxTjqrkBPb+2TNhxtCzw0g==}
+    dependencies:
+      '@snowplow/browser-tracker-core': 3.4.0
+      '@snowplow/tracker-core': 3.4.0
+      tslib: 2.4.0
+    dev: false
+
+  /@snowplow/tracker-core/3.4.0:
+    resolution: {integrity: sha512-HINAMZdvcQwIOZVVM8UtNZB2X33m7+gAIzDj3YQxvzphDUo7+GPCmmoVZmP9C2m6HovtBbKDX7slruvWFh+kcw==}
+    dependencies:
+      tslib: 2.4.0
+      uuid: 3.4.0
     dev: false
 
   /@types/bson/4.2.0:
@@ -148,6 +177,14 @@ packages:
       ieee754: 1.2.1
     dev: true
 
+  /charenc/0.0.2:
+    resolution: {integrity: sha512-yrLQ/yVUFXkzg7EDQsPieE/53+0RlaWTs+wBrvW36cyilJ2SaDWfl4Yj7MtLTXleV9uEKefbAGUPv2/iWSooRA==}
+    dev: false
+
+  /crypt/0.0.2:
+    resolution: {integrity: sha1-iNf/fsDfuG9xPch7u0LQRNPmxBs=}
+    dev: false
+
   /csstype/3.1.0:
     resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==}
     dev: true
@@ -194,8 +231,25 @@ packages:
       loose-envify: 1.4.0
     dev: false
 
+  /sha1/1.1.1:
+    resolution: {integrity: sha1-rdqnqTFo85PxnrKxUJFhjicA+Eg=}
+    dependencies:
+      charenc: 0.0.2
+      crypt: 0.0.2
+    dev: false
+
+  /tslib/2.4.0:
+    resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
+
   /typescript/4.6.4:
     resolution: {integrity: sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
     dev: true
+
+  /uuid/3.4.0:
+    resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
+    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    hasBin: true
+    dev: false

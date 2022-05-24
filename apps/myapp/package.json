@@ -6,6 +6,7 @@
     "build": "tsc --build tsconfig.json --watch"
   },
   "dependencies": {
+    "@snowplow/browser-tracker": "^3.4.0",
     "@babel/runtime": "^7.18.0",
     "@lessonup/package-a": "0.0.1",
     "react": "^18.1.0",
