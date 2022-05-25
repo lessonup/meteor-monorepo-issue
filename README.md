@@ -40,7 +40,23 @@ Fixes and findings are thanks to @harryadel
 - Set [node-linker](https://pnpm.io/npmrc#node-linker) to hoisted in meteor directory not in root `.npmrc`.
   Again, this option stops the sym linking behavior which upsets Meteor but on a more of a local scale compared to the previous one which works in regards to workspaces.
 
-## Open issue
+## Open issues
+
+### React is being imported twice
+
+After installing add `window.React1 = require('react');` to `apps/myapp/node_modules/react-dom/index.js` as described [here](https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react) and start the application.
+
+You'll get the error being logged at [MyFeature.tsx](packages/package-a/src/feature/MyFeature.tsx)
+
+![image](https://user-images.githubusercontent.com/710335/170228291-fa58e166-7fa7-446a-9c5f-9809585735c9.png)
+
+My assumtion is that this is because of the `node_modules` structure which contains `react` in the root and `react` via the symlink of `package-a/node_modules/react`.
+
+![Screenshot 2022-05-25 at 11 20 50](https://user-images.githubusercontent.com/710335/170228804-1c6ba233-3912-42ea-ba98-0dd4ab59b477.png)
+
+
+
+### Meteor no watching changes of `package-b`
 
 There is 1 open issue where issue doesn't auto reload changes from `package-b`, but it does do that for `package-a`.
 
