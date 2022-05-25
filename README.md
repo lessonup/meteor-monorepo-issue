@@ -46,7 +46,7 @@ Fixes and findings are thanks to @harryadel
 
 After installing add `window.React1 = require('react');` to `apps/myapp/node_modules/react-dom/index.js` as described [here](https://reactjs.org/warnings/invalid-hook-call-warning.html#duplicate-react) and start the application.
 
-You'll get the error being logged at [MyFeature.tsx](packages/package-a/src/feature/MyFeature.tsx)
+You'll get the log at [MyFeature.tsx](packages/package-a/src/feature/MyFeature.tsx) which indicates that react has been loaded twice. The error implies the same.
 
 ![image](https://user-images.githubusercontent.com/710335/170228291-fa58e166-7fa7-446a-9c5f-9809585735c9.png)
 
