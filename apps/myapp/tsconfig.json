@@ -3,7 +3,8 @@
   "compilerOptions": {
     "rootDir": ".",
     "outDir": "dist",
-    "composite": false
+    "composite": false,
+    "noEmit": true
   },
   "references": [{ "path": "../../packages/package-a" }],
   "include": ["imports", "server", "client"]
