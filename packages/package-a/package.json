@@ -4,14 +4,18 @@
   "private": true,
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.json",
+    "clean": "rm -rf dist node_modules tsconfig.tsbuildinfo"
+  },
+  "peerDependencies": {
+    "react": "17.x"
   },
   "dependencies": {
     "@lessonup/package-b": "0.0.1",
-    "react": "^18.1.0"
+    "react": "17.0.2"
   },
   "devDependencies": {
     "typescript": "4.6.4",
-    "@types/react": "^18.0.9"
+    "@types/react": "17.0.2"
   }
 }

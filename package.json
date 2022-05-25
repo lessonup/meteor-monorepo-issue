@@ -2,6 +2,7 @@
   "name": "lessonup-monorepo",
   "version": "0.0.1",
   "scripts": {
+    "clean": "pnpm -r clean && rm -rf node_modules",
     "build": "pnpm --filter @lessonup/myapp build",
     "start": "pnpm --filter @lessonup/myapp start"
   }
