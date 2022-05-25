@@ -2,7 +2,7 @@
   "name": "lessonup-monorepo",
   "version": "0.0.1",
   "scripts": {
-    "build": "pnpm build --filter @lessonup/myapp",
-    "start": "pnpm start --filter @lessonup/myapp"
+    "build": "pnpm --filter @lessonup/myapp build",
+    "start": "pnpm --filter @lessonup/myapp start"
   }
 }

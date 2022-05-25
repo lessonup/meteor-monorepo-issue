@@ -2,7 +2,7 @@
   "name": "@lessonup/myapp",
   "private": true,
   "scripts": {
-    "start": "meteor",
+    "start": "METEOR_DISABLE_OPTIMISTIC_CACHING=true meteor",
     "build": "tsc --build tsconfig.json --watch"
   },
   "dependencies": {
