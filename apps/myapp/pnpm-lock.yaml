@@ -6,15 +6,13 @@ specifiers:
   '@snowplow/browser-tracker': ^3.4.0
   '@types/meteor': ^1.4.81
   '@types/mocha': ^8.2.3
-  '@types/react': 17.0.2
-  '@types/react-dom': 17.0.2
   react: 17.0.2
   react-dom: 17.0.2
   scheduler: ^0.22.0
   typescript: 4.6.4
 
 dependencies:
-  '@babel/runtime': 7.18.0
+  '@babel/runtime': 7.18.3
   '@lessonup/package-a': link:../../packages/package-a
   '@snowplow/browser-tracker': 3.4.0
   react: 17.0.2
@@ -24,14 +22,12 @@ dependencies:
 devDependencies:
   '@types/meteor': 1.4.87
   '@types/mocha': 8.2.3
-  '@types/react': 17.0.2
-  '@types/react-dom': 17.0.2
   typescript: 4.6.4
 
 packages:
 
-  /@babel/runtime/7.18.0:
-    resolution: {integrity: sha512-YMQvx/6nKEaucl0MY56mwIG483xk8SDNdlUwb2Ts6FUpr7fm85DxEmsY18LXBNhcTz6tO6JwZV8w1W06v8UKeg==}
+  /@babel/runtime/7.18.3:
+    resolution: {integrity: sha512-38Y8f7YUhce/K7RMwTp7m0uCumpv9hZkitCbBClqQIow1qSbCvGkcegKOXpEWCQLfWmevgRiWokZ1GkpfhbZug==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.13.9
@@ -107,19 +103,6 @@ packages:
 
   /@types/prop-types/15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
-    dev: true
-
-  /@types/react-dom/17.0.2:
-    resolution: {integrity: sha512-Icd9KEgdnFfJs39KyRyr0jQ7EKhq8U6CcHRMGAS45fp5qgUvxL3ujUCfWFttUK2UErqZNj97t9gsVPNAqcwoCg==}
-    dependencies:
-      '@types/react': 18.0.9
-    dev: true
-
-  /@types/react/17.0.2:
-    resolution: {integrity: sha512-Xt40xQsrkdvjn1EyWe1Bc0dJLcil/9x2vAuW7ya+PuQip4UYUaXyhzWmAbwRsdMgwOFHpfp7/FFZebDU6Y8VHA==}
-    dependencies:
-      '@types/prop-types': 15.7.5
-      csstype: 3.1.0
     dev: true
 
   /@types/react/18.0.9:
