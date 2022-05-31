@@ -2,7 +2,8 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/runtime': ^7.18.0
-  '@lessonup/package-a': 0.0.1
+  '@lessonup/package-a': workspace:../../meteor-bridge/package-a
+  '@lessonup/package-b': workspace:../../meteor-bridge/package-b
   '@snowplow/browser-tracker': ^3.4.0
   '@types/meteor': ^1.4.81
   '@types/mocha': ^8.2.3
@@ -15,7 +16,8 @@ specifiers:
 
 dependencies:
   '@babel/runtime': 7.18.0
-  '@lessonup/package-a': link:../../packages/package-a
+  '@lessonup/package-a': link:../../meteor-bridge/package-a
+  '@lessonup/package-b': link:../../meteor-bridge/package-b
   '@snowplow/browser-tracker': 3.4.0
   react: 17.0.2
   react-dom: 17.0.2_react@17.0.2

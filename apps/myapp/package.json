@@ -7,9 +7,10 @@
     "clean": "rm -rf dist node_modules tsconfig.tsbuildinfo"
   },
   "dependencies": {
-    "@snowplow/browser-tracker": "^3.4.0",
     "@babel/runtime": "^7.18.0",
-    "@lessonup/package-a": "0.0.1",
+    "@lessonup/package-a": "workspace:../../meteor-bridge/package-a",
+    "@lessonup/package-b": "workspace:../../meteor-bridge/package-b",
+    "@snowplow/browser-tracker": "^3.4.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "scheduler": "^0.22.0"
